@@ -1,0 +1,13 @@
+.app-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.button-container{
+    display: flex;
+    margin-top: 10px;
+}
+.para{
+    margin-left: 10px;
+    margin-right: 10px;
+}

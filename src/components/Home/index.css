@@ -1,0 +1,11 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+.cred-container{
+    display: flex;
+    justify-content: space-around;
+}
