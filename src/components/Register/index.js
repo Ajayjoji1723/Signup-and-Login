@@ -45,7 +45,7 @@ function Register() {
     const [data,setData] = useState([])
     const onSubmitForm=e=>{
         e.preventDefault()
-        if (username && mailid && mobilenum && password !== undefined){
+        if (username | mailid | mobilenum | password !== ''){
             axios.post('http://localhost:3001/register',{
             optionid:optionId, 
             username:username,
@@ -56,6 +56,9 @@ function Register() {
         })
             .then(res=>setData(res.data)).catch(err=> console.log(err))
             navigate("/login")
+
+        }else{
+            alert('please enter req details')
         }
     }
     console.log(data)
